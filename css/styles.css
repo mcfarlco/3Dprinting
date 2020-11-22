@@ -18,16 +18,29 @@ a {
   text-decoration: none;
 }
 
+a:link, a:visited {
+  color: #D8D8D8;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #5cc190;
+}
+
 img {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   background-size: cover;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 video {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   background-size: cover;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 td {
@@ -39,12 +52,35 @@ li {
   color: #D8D8D8;
 }
 
+label {
+  color: #5cc190;
+  vertical-align: top;
+}
+
+textarea {
+  vertical-align: top;
+}
+
 strong {
   color: #76b053;
 }
 
+.aligner {
+  margin: 50px auto 200px auto;
+  line-height: 1.5;
+  width: 80%;
+}
+
+.scrollbox {
+  overflow: scroll;
+  width: 33%;
+  height: 100px;
+  word-wrap: normal;
+}
+
 .citing {
   font-size: x-small;
+  position: relative;
 }
 
 .fullpage {
@@ -59,16 +95,49 @@ strong {
   margin: 25px auto;
 }
 
-.imageList::after {
+.image-list::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.redditHolder {
+.image-holder {
   float: left;
   width: 33.33%;
   height: 100%;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.left-img {
+  line-height: normal;
+  float: left;
+  margin-right: 40px;
+}
+
+.right-img {
+  line-height: normal;
+  float: right;
+  margin-left: 40px;
+}
+
+.left-text {
+  text-align: left;
+  height:100%;
+  vertical-align:middle;
+}
+
+.right-text {
+  text-align: right;
+  height:100%;
+  vertical-align:middle;
+}
+
+.center-obj {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /* The following CSS was provided by W3Schools for the carousel */

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <section class="twitch">
+  <section class="twitch center-obj">
     <h2>Twitch Streams</h2>
     <p>Curious as to seeing a printer in action? Check out 3dprinting247 who prints nearly all the time!</p>
     <!-- Add a placeholder for the Twitch embed -->
@@ -28,8 +28,6 @@
         channel: "3dprinting247",
         layout: "video",
         autoplay: false,
-        // only needed if your site is also embedded on embed.example.com and othersite.example.com
-        // parent: ["embed.example.com", "othersite.example.com"]
       });
 
       embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
@@ -40,42 +38,44 @@
   </section>
   <hr>
   <section class="reddit">
-    <h2>Reddit</h2>
-    <p>Popular images this week from the subreddits r/3Dprinting, r/functionalprint, and r/PrintedMinis:</p>
-    <div class="imageList">
-      <div class="redditHolder leftImg" id="3dDay"></div>
+    <h2 class="center-obj">Reddit</h2>
+    <p class="center-obj">Popular images this week from the subreddits r/3Dprinting, r/functionalprint, and r/PrintedMinis:</p>
+    <div class="image-list">
+      <div class="image-holder" id="3dDay"></div>
 
-      <div class="redditHolder centerImg" id="3dWeek"></div>
+      <div class="image-holder" id="3dWeek"></div>
 
-      <div class="redditHolder rightImg" id="3dMonth"></div>
+      <div class="image-holder" id="3dMonth"></div>
 
     </div>
 
-    <div class="imageList">
-      <div class="redditHolder leftImg" id="fpDay"></div>
+    <div class="image-list">
+      <div class="image-holder" id="fpDay"></div>
 
-      <div class="redditHolder centerImg" id="fpWeek"></div>
+      <div class="image-holder" id="fpWeek"></div>
 
-      <div class="redditHolder rightImg" id="fpMonth"></div>
+      <div class="image-holder" id="fpMonth"></div>
     </div>
 
-    <div class="imageList">
-      <div class="redditHolder leftImg" id="pmDay"></div>
+    <div class="image-list">
+      <div class="image-holder" id="pmDay"></div>
 
-      <div class="redditHolder centerImg" id="pmWeek"></div>
+      <div class="image-holder" id="pmWeek"></div>
 
-      <div class="redditHolder rightImg" id="pmMonth"></div>
+      <div class="image-holder" id="pmMonth"></div>
 
     </div>
   </section>
   <hr>
   <section>
-    <h2>Things I've Designed</h2>
-    <img src="https://cdn.thingiverse.com/renders/44/15/eb/ad/a2/b5cb37b87f267b2e89dd05708fe01041_preview_featured.jpg" alt="">
-    <p>Sometimes you just have to try to do something in order to learn how to do it. It's okay to have low quality or "imperfect" projects so long as you are able to learn something! One of my first attempts to create my own design was a <a href="https://www.thingiverse.com/thing:3643934">Joystick Mount</a>. It taught me a lot about creating designs with tolerances for 3d printing. Just because you made the hole the width of the screw, doesn't mean the plastic will settle at the exact same size. It also can help you see areas where you want more or less material to handle any stress you might put on the design or to reduce the print time and material cost. So don't be afraid to try something on your own, even if it does fail. Want to check out my design? Click the button below to get a copy of the STLs!</p>
+    <h2  class="center-obj">Things I've Designed</h2>
+    <div class="aligner">
+    <img class="right-img" src="https://cdn.thingiverse.com/renders/44/15/eb/ad/a2/b5cb37b87f267b2e89dd05708fe01041_preview_featured.jpg" alt="">
+    <p class="left-text">Sometimes you just have to try to do something in order to learn how to do it. It's okay to have low quality or "imperfect" projects so long as you are able to learn something! One of my first attempts to create my own design was a <a href="https://www.thingiverse.com/thing:3643934">Joystick Mount</a>. It taught me a lot about creating designs with tolerances for 3d printing. Just because you made the hole the width of the screw, doesn't mean the plastic will settle at the exact same size. It also can help you see areas where you want more or less material to handle any stress you might put on the design or to reduce the print time and material cost. So don't be afraid to try something on your own, even if it does fail. Want to check out my design? Click the button below to get a copy of the STLs!</p>
     <form method="get" action="downloads/Thrustmaster_T16000M_Mount.zip">
       <button type="submit">Download STL</button>
     </form>
+  </div>
   </section>
   <hr>
   <footer>
